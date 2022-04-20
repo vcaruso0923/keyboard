@@ -1,65 +1,72 @@
 body {
-    background-color: rgb(255, 242, 53);
+  background-color: rgb(255, 242, 53);
 }
 
 button {
-    color: rgb(255, 255, 255);
-    background-color: red;
-    /* For browsers that do not support gradients */
-    background-image: linear-gradient(red, yellow);
+  color: rgb(255, 255, 255);
+  background-color: red;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
 }
 
 button:hover {
-    background-image: linear-gradient(blue, green);
+  background-image: linear-gradient(blue, green);
+}
+
+.caps-active {
+  background-image: linear-gradient(gray, black);
 }
 
 .use-keyboard-input {
-    background-image: linear-gradient(pink, gray);
-    position: relative;
-    left: 14.1vw;
-    width: 70vw;
-    height: 25vh;
+  background-image: linear-gradient(pink, gray);
+  position: relative;
+  left: 14.1vw;
+  width: 70vw;
+  height: 25vh;
+  /* Notice we add white-space property. This is to make sure the 'enter' button actually works for the keyboard. Google it
+  if you don't understand. */
+  white-space: pre-wrap;
 }
 
 .keyboard-base {
-    position: relative;
-    width: 70.5vw;
-    height: 41%;
-    padding: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(0, 0, 0);
-    border-radius: 6px;
-    display: grid;
-    grid-template-columns: repeat(28, 28px);
-    grid-template-rows: repeat(4, 57px);
-    grid-gap: 6.8px;
+  position: relative;
+  width: 70.5vw;
+  height: 41%;
+  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(28, 28px);
+  grid-template-rows: repeat(4, 57px);
+  grid-gap: 6.8px;
 }
 
 .keyBoard-wrapper {
-    position: relative;
-    left: 5.5vw;
-    margin: -260%;
+  position: relative;
+  left: 5.5vw;
+  margin: -260%;
 }
 
 .keyNumbers {
-    display: grid;
-    margin-top: 5rem;
-    grid-template-columns: repeat(15, 4rem);
-    grid-template-rows: minmax(3rem, auto) repeat(3, 3rem);
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: repeat(15, 4rem);
+  grid-template-rows: minmax(3rem, auto) repeat(3, 3rem);
 }
 
 .span-two {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 .span-four {
-    grid-column: span 4;
+  grid-column: span 4;
 }
 
 .span-twelve {
-    grid-column: span 15;
-    height: 7vh;
+  grid-column: span 15;
+  height: 7vh;
 }
